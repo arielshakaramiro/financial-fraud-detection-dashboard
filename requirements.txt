@@ -1,0 +1,13 @@
+streamlit==1.28.0
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+catboost
+imbalanced-learn
+optuna
+plotly
+joblib
+pycaret[full]
+

@@ -1,0 +1,1154 @@
+2025-07-14 09:55:01,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:55:01,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:55:01,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:55:01,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:58:11,514:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:58:11,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:58:11,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:58:11,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-07-14 09:58:37,599:INFO:PyCaret ClassificationExperiment
+2025-07-14 09:58:37,604:INFO:Logging name: clf-default-name
+2025-07-14 09:58:37,605:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2025-07-14 09:58:37,605:INFO:version 3.3.2
+2025-07-14 09:58:37,606:INFO:Initializing setup()
+2025-07-14 09:58:37,606:INFO:self.USI: dbd9
+2025-07-14 09:58:37,606:INFO:self._variable_keys: {'fold_generator', 'gpu_param', 'exp_id', '_ml_usecase', '_available_plots', 'y', 'data', 'X_train', 'html_param', 'target_param', 'y_test', 'USI', 'logging_param', 'fold_groups_param', 'fix_imbalance', 'exp_name_log', 'idx', 'memory', 'y_train', 'X_test', 'X', 'n_jobs_param', 'is_multiclass', 'log_plots_param', 'gpu_n_jobs_param', 'fold_shuffle_param', 'seed', 'pipeline'}
+2025-07-14 09:58:37,607:INFO:Checking environment
+2025-07-14 09:58:37,607:INFO:python_version: 3.11.9
+2025-07-14 09:58:37,607:INFO:python_build: ('main', 'Jul 14 2025 09:43:45')
+2025-07-14 09:58:37,607:INFO:machine: x86_64
+2025-07-14 09:58:37,611:INFO:platform: Linux-6.8.0-1027-azure-x86_64-with-glibc2.39
+2025-07-14 09:58:37,613:INFO:Memory: svmem(total=8324300800, available=5767434240, percent=30.7, used=2162028544, free=349638656, active=1896914944, inactive=5350342656, buffers=115785728, cached=5696847872, shared=64352256, slab=570294272)
+2025-07-14 09:58:37,614:INFO:Physical Core: 1
+2025-07-14 09:58:37,614:INFO:Logical Core: 2
+2025-07-14 09:58:37,615:INFO:Checking libraries
+2025-07-14 09:58:37,615:INFO:System:
+2025-07-14 09:58:37,615:INFO:    python: 3.11.9 (main, Jul 14 2025, 09:43:45) [GCC 13.3.0]
+2025-07-14 09:58:37,616:INFO:executable: /workspaces/financial-fraud-detection-dashboard/fraud-env/bin/python
+2025-07-14 09:58:37,616:INFO:   machine: Linux-6.8.0-1027-azure-x86_64-with-glibc2.39
+2025-07-14 09:58:37,616:INFO:PyCaret required dependencies:
+2025-07-14 09:58:37,619:INFO:                 pip: 25.1.1
+2025-07-14 09:58:37,619:INFO:          setuptools: 65.5.0
+2025-07-14 09:58:37,619:INFO:             pycaret: 3.3.2
+2025-07-14 09:58:37,619:INFO:             IPython: 9.4.0
+2025-07-14 09:58:37,619:INFO:          ipywidgets: 8.1.7
+2025-07-14 09:58:37,619:INFO:                tqdm: 4.67.1
+2025-07-14 09:58:37,619:INFO:               numpy: 1.26.4
+2025-07-14 09:58:37,619:INFO:              pandas: 2.1.4
+2025-07-14 09:58:37,619:INFO:              jinja2: 3.1.6
+2025-07-14 09:58:37,619:INFO:               scipy: 1.11.4
+2025-07-14 09:58:37,620:INFO:              joblib: 1.3.2
+2025-07-14 09:58:37,620:INFO:             sklearn: 1.4.2
+2025-07-14 09:58:37,620:INFO:                pyod: 2.0.5
+2025-07-14 09:58:37,620:INFO:            imblearn: 0.13.0
+2025-07-14 09:58:37,620:INFO:   category_encoders: 2.7.0
+2025-07-14 09:58:37,620:INFO:            lightgbm: 4.6.0
+2025-07-14 09:58:37,620:INFO:               numba: 0.61.0
+2025-07-14 09:58:37,620:INFO:            requests: 2.32.4
+2025-07-14 09:58:37,620:INFO:          matplotlib: 3.7.5
+2025-07-14 09:58:37,620:INFO:          scikitplot: 0.3.7
+2025-07-14 09:58:37,621:INFO:         yellowbrick: 1.5
+2025-07-14 09:58:37,621:INFO:              plotly: 5.24.1
+2025-07-14 09:58:37,622:INFO:    plotly-resampler: Not installed
+2025-07-14 09:58:37,622:INFO:             kaleido: 1.0.0
+2025-07-14 09:58:37,622:INFO:           schemdraw: 0.15
+2025-07-14 09:58:37,623:INFO:         statsmodels: 0.14.5
+2025-07-14 09:58:37,623:INFO:              sktime: 0.26.0
+2025-07-14 09:58:37,623:INFO:               tbats: 1.1.3
+2025-07-14 09:58:37,624:INFO:            pmdarima: 2.0.4
+2025-07-14 09:58:37,624:INFO:              psutil: 7.0.0
+2025-07-14 09:58:37,624:INFO:          markupsafe: 3.0.2
+2025-07-14 09:58:37,625:INFO:             pickle5: Not installed
+2025-07-14 09:58:37,625:INFO:         cloudpickle: 3.1.1
+2025-07-14 09:58:37,626:INFO:         deprecation: 2.1.0
+2025-07-14 09:58:37,626:INFO:              xxhash: 3.5.0
+2025-07-14 09:58:37,626:INFO:           wurlitzer: 3.1.1
+2025-07-14 09:58:37,627:INFO:PyCaret optional dependencies:
+2025-07-14 09:58:41,693:INFO:                shap: 0.44.1
+2025-07-14 09:58:41,693:INFO:           interpret: 0.7.0
+2025-07-14 09:58:41,694:INFO:                umap: 0.5.7
+2025-07-14 09:58:41,694:INFO:     ydata_profiling: 4.16.1
+2025-07-14 09:58:41,694:INFO:  explainerdashboard: 0.5.1
+2025-07-14 09:58:41,694:INFO:             autoviz: Not installed
+2025-07-14 09:58:41,695:INFO:           fairlearn: 0.7.0
+2025-07-14 09:58:41,695:INFO:          deepchecks: Not installed
+2025-07-14 09:58:41,695:INFO:             xgboost: 3.0.2
+2025-07-14 09:58:41,696:INFO:            catboost: 1.2.8
+2025-07-14 09:58:41,696:INFO:              kmodes: 0.12.2
+2025-07-14 09:58:41,696:INFO:             mlxtend: 0.23.4
+2025-07-14 09:58:41,697:INFO:       statsforecast: 1.5.0
+2025-07-14 09:58:41,697:INFO:        tune_sklearn: Not installed
+2025-07-14 09:58:41,697:INFO:                 ray: Not installed
+2025-07-14 09:58:41,697:INFO:            hyperopt: 0.2.7
+2025-07-14 09:58:41,697:INFO:              optuna: 4.4.0
+2025-07-14 09:58:41,697:INFO:               skopt: 0.10.2
+2025-07-14 09:58:41,697:INFO:              mlflow: 3.1.1
+2025-07-14 09:58:41,697:INFO:              gradio: 5.36.2
+2025-07-14 09:58:41,697:INFO:             fastapi: 0.116.1
+2025-07-14 09:58:41,697:INFO:             uvicorn: 0.35.0
+2025-07-14 09:58:41,697:INFO:              m2cgen: 0.10.0
+2025-07-14 09:58:41,697:INFO:           evidently: 0.4.40
+2025-07-14 09:58:41,697:INFO:               fugue: 0.8.7
+2025-07-14 09:58:41,697:INFO:           streamlit: 1.28.0
+2025-07-14 09:58:41,697:INFO:             prophet: Not installed
+2025-07-14 09:58:41,697:INFO:None
+2025-07-14 09:58:41,697:INFO:Set up data.
+2025-07-14 09:58:41,706:INFO:Set up folding strategy.
+2025-07-14 09:58:41,707:INFO:Set up train/test split.
+2025-07-14 09:58:41,711:INFO:Set up index.
+2025-07-14 09:58:41,711:INFO:Assigning column types.
+2025-07-14 09:58:41,714:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-07-14 09:58:41,754:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-07-14 09:58:41,762:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-07-14 09:58:41,805:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:41,807:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:41,850:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-07-14 09:58:41,851:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-07-14 09:58:41,875:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:41,878:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:41,879:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-07-14 09:58:41,918:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-07-14 09:58:41,942:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:41,945:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:41,985:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-07-14 09:58:42,010:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:42,013:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:42,014:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2025-07-14 09:58:42,077:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:42,080:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:42,145:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:42,148:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:42,151:INFO:Preparing preprocessing pipeline...
+2025-07-14 09:58:42,152:INFO:Set up simple imputation.
+2025-07-14 09:58:42,171:INFO:Finished creating preprocessing pipeline.
+2025-07-14 09:58:42,179:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['amount', 'feature1', 'feature2',
+                                             'hour'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2025-07-14 09:58:42,180:INFO:Creating final display dataframe.
+2025-07-14 09:58:42,234:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target          is_fraud
+2                   Target type            Binary
+3           Original data shape          (300, 5)
+4        Transformed data shape          (300, 5)
+5   Transformed train set shape          (210, 5)
+6    Transformed test set shape           (90, 5)
+7              Numeric features                 4
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator   StratifiedKFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  clf-default-name
+18                          USI              dbd9
+2025-07-14 09:58:42,297:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:42,300:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:42,370:INFO:Soft dependency imported: xgboost: 3.0.2
+2025-07-14 09:58:42,372:INFO:Soft dependency imported: catboost: 1.2.8
+2025-07-14 09:58:42,374:INFO:setup() successfully completed in 4.78s...............
+2025-07-14 09:58:42,375:INFO:Initializing compare_models()
+2025-07-14 09:58:42,375:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2025-07-14 09:58:42,375:INFO:Checking exceptions
+2025-07-14 09:58:42,378:INFO:Preparing display monitor
+2025-07-14 09:58:42,381:INFO:Initializing Logistic Regression
+2025-07-14 09:58:42,382:INFO:Total runtime is 1.7722447713216146e-06 minutes
+2025-07-14 09:58:42,382:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:42,382:INFO:Initializing create_model()
+2025-07-14 09:58:42,382:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:42,383:INFO:Checking exceptions
+2025-07-14 09:58:42,383:INFO:Importing libraries
+2025-07-14 09:58:42,383:INFO:Copying training dataset
+2025-07-14 09:58:42,386:INFO:Defining folds
+2025-07-14 09:58:42,386:INFO:Declaring metric variables
+2025-07-14 09:58:42,386:INFO:Importing untrained model
+2025-07-14 09:58:42,387:INFO:Logistic Regression Imported successfully
+2025-07-14 09:58:42,387:INFO:Starting cross validation
+2025-07-14 09:58:42,388:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:48,556:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,762:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,803:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,822:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,870:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,920:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,976:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:48,984:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,036:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,049:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,056:INFO:Calculating mean and std
+2025-07-14 09:58:49,057:INFO:Creating metrics dataframe
+2025-07-14 09:58:49,060:INFO:Uploading results into container
+2025-07-14 09:58:49,061:INFO:Uploading model into container now
+2025-07-14 09:58:49,062:INFO:_master_model_container: 1
+2025-07-14 09:58:49,062:INFO:_display_container: 2
+2025-07-14 09:58:49,063:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-07-14 09:58:49,063:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:49,306:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:49,307:INFO:Creating metrics dataframe
+2025-07-14 09:58:49,311:INFO:Initializing K Neighbors Classifier
+2025-07-14 09:58:49,311:INFO:Total runtime is 0.11549839178721111 minutes
+2025-07-14 09:58:49,312:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:49,312:INFO:Initializing create_model()
+2025-07-14 09:58:49,312:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:49,313:INFO:Checking exceptions
+2025-07-14 09:58:49,313:INFO:Importing libraries
+2025-07-14 09:58:49,313:INFO:Copying training dataset
+2025-07-14 09:58:49,317:INFO:Defining folds
+2025-07-14 09:58:49,317:INFO:Declaring metric variables
+2025-07-14 09:58:49,317:INFO:Importing untrained model
+2025-07-14 09:58:49,318:INFO:K Neighbors Classifier Imported successfully
+2025-07-14 09:58:49,318:INFO:Starting cross validation
+2025-07-14 09:58:49,319:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:49,401:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,401:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,462:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,482:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,533:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,546:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,600:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,612:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,667:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,678:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,684:INFO:Calculating mean and std
+2025-07-14 09:58:49,685:INFO:Creating metrics dataframe
+2025-07-14 09:58:49,687:INFO:Uploading results into container
+2025-07-14 09:58:49,687:INFO:Uploading model into container now
+2025-07-14 09:58:49,688:INFO:_master_model_container: 2
+2025-07-14 09:58:49,688:INFO:_display_container: 2
+2025-07-14 09:58:49,689:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2025-07-14 09:58:49,689:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:49,899:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:49,899:INFO:Creating metrics dataframe
+2025-07-14 09:58:49,902:INFO:Initializing Naive Bayes
+2025-07-14 09:58:49,902:INFO:Total runtime is 0.1253491004308065 minutes
+2025-07-14 09:58:49,903:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:49,903:INFO:Initializing create_model()
+2025-07-14 09:58:49,903:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:49,903:INFO:Checking exceptions
+2025-07-14 09:58:49,903:INFO:Importing libraries
+2025-07-14 09:58:49,904:INFO:Copying training dataset
+2025-07-14 09:58:49,907:INFO:Defining folds
+2025-07-14 09:58:49,907:INFO:Declaring metric variables
+2025-07-14 09:58:49,907:INFO:Importing untrained model
+2025-07-14 09:58:49,908:INFO:Naive Bayes Imported successfully
+2025-07-14 09:58:49,908:INFO:Starting cross validation
+2025-07-14 09:58:49,909:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:49,951:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:49,952:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,002:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,018:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,051:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,087:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,090:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,132:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,139:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,159:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,166:INFO:Calculating mean and std
+2025-07-14 09:58:50,167:INFO:Creating metrics dataframe
+2025-07-14 09:58:50,169:INFO:Uploading results into container
+2025-07-14 09:58:50,170:INFO:Uploading model into container now
+2025-07-14 09:58:50,170:INFO:_master_model_container: 3
+2025-07-14 09:58:50,171:INFO:_display_container: 2
+2025-07-14 09:58:50,171:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2025-07-14 09:58:50,171:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:50,382:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:50,383:INFO:Creating metrics dataframe
+2025-07-14 09:58:50,389:INFO:Initializing Decision Tree Classifier
+2025-07-14 09:58:50,389:INFO:Total runtime is 0.13345871766408285 minutes
+2025-07-14 09:58:50,390:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:50,391:INFO:Initializing create_model()
+2025-07-14 09:58:50,391:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:50,392:INFO:Checking exceptions
+2025-07-14 09:58:50,392:INFO:Importing libraries
+2025-07-14 09:58:50,392:INFO:Copying training dataset
+2025-07-14 09:58:50,398:INFO:Defining folds
+2025-07-14 09:58:50,398:INFO:Declaring metric variables
+2025-07-14 09:58:50,398:INFO:Importing untrained model
+2025-07-14 09:58:50,399:INFO:Decision Tree Classifier Imported successfully
+2025-07-14 09:58:50,400:INFO:Starting cross validation
+2025-07-14 09:58:50,401:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:50,562:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,695:INFO:Calculating mean and std
+2025-07-14 09:58:50,696:INFO:Creating metrics dataframe
+2025-07-14 09:58:50,698:INFO:Uploading results into container
+2025-07-14 09:58:50,699:INFO:Uploading model into container now
+2025-07-14 09:58:50,699:INFO:_master_model_container: 4
+2025-07-14 09:58:50,700:INFO:_display_container: 2
+2025-07-14 09:58:50,700:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=42, splitter='best')
+2025-07-14 09:58:50,700:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:50,934:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:50,935:INFO:Creating metrics dataframe
+2025-07-14 09:58:50,938:INFO:Initializing SVM - Linear Kernel
+2025-07-14 09:58:50,939:INFO:Total runtime is 0.14261890252431234 minutes
+2025-07-14 09:58:50,939:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:50,939:INFO:Initializing create_model()
+2025-07-14 09:58:50,940:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:50,940:INFO:Checking exceptions
+2025-07-14 09:58:50,940:INFO:Importing libraries
+2025-07-14 09:58:50,940:INFO:Copying training dataset
+2025-07-14 09:58:50,944:INFO:Defining folds
+2025-07-14 09:58:50,944:INFO:Declaring metric variables
+2025-07-14 09:58:50,944:INFO:Importing untrained model
+2025-07-14 09:58:50,945:INFO:SVM - Linear Kernel Imported successfully
+2025-07-14 09:58:50,945:INFO:Starting cross validation
+2025-07-14 09:58:50,946:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:50,985:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:50,987:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,024:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,034:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,064:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,077:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,110:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,163:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,195:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,205:INFO:Calculating mean and std
+2025-07-14 09:58:51,206:INFO:Creating metrics dataframe
+2025-07-14 09:58:51,208:INFO:Uploading results into container
+2025-07-14 09:58:51,209:INFO:Uploading model into container now
+2025-07-14 09:58:51,209:INFO:_master_model_container: 5
+2025-07-14 09:58:51,210:INFO:_display_container: 2
+2025-07-14 09:58:51,210:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=42, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2025-07-14 09:58:51,211:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:51,425:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:51,425:INFO:Creating metrics dataframe
+2025-07-14 09:58:51,428:INFO:Initializing Ridge Classifier
+2025-07-14 09:58:51,428:INFO:Total runtime is 0.15078380107879638 minutes
+2025-07-14 09:58:51,429:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:51,429:INFO:Initializing create_model()
+2025-07-14 09:58:51,429:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:51,430:INFO:Checking exceptions
+2025-07-14 09:58:51,430:INFO:Importing libraries
+2025-07-14 09:58:51,430:INFO:Copying training dataset
+2025-07-14 09:58:51,434:INFO:Defining folds
+2025-07-14 09:58:51,434:INFO:Declaring metric variables
+2025-07-14 09:58:51,434:INFO:Importing untrained model
+2025-07-14 09:58:51,435:INFO:Ridge Classifier Imported successfully
+2025-07-14 09:58:51,435:INFO:Starting cross validation
+2025-07-14 09:58:51,436:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:51,476:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,481:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,518:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,525:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,557:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,568:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,592:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,603:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,634:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,641:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:51,648:INFO:Calculating mean and std
+2025-07-14 09:58:51,649:INFO:Creating metrics dataframe
+2025-07-14 09:58:51,651:INFO:Uploading results into container
+2025-07-14 09:58:51,651:INFO:Uploading model into container now
+2025-07-14 09:58:51,652:INFO:_master_model_container: 6
+2025-07-14 09:58:51,652:INFO:_display_container: 2
+2025-07-14 09:58:51,653:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=42, solver='auto',
+                tol=0.0001)
+2025-07-14 09:58:51,653:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:51,862:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:51,863:INFO:Creating metrics dataframe
+2025-07-14 09:58:51,866:INFO:Initializing Random Forest Classifier
+2025-07-14 09:58:51,866:INFO:Total runtime is 0.15808306535085043 minutes
+2025-07-14 09:58:51,867:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:51,867:INFO:Initializing create_model()
+2025-07-14 09:58:51,867:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:51,868:INFO:Checking exceptions
+2025-07-14 09:58:51,868:INFO:Importing libraries
+2025-07-14 09:58:51,868:INFO:Copying training dataset
+2025-07-14 09:58:51,872:INFO:Defining folds
+2025-07-14 09:58:51,872:INFO:Declaring metric variables
+2025-07-14 09:58:51,872:INFO:Importing untrained model
+2025-07-14 09:58:51,873:INFO:Random Forest Classifier Imported successfully
+2025-07-14 09:58:51,873:INFO:Starting cross validation
+2025-07-14 09:58:51,874:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:52,193:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:52,218:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:52,509:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:52,524:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:52,817:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:52,864:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,146:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,451:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,493:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,505:INFO:Calculating mean and std
+2025-07-14 09:58:53,507:INFO:Creating metrics dataframe
+2025-07-14 09:58:53,508:INFO:Uploading results into container
+2025-07-14 09:58:53,509:INFO:Uploading model into container now
+2025-07-14 09:58:53,510:INFO:_master_model_container: 7
+2025-07-14 09:58:53,510:INFO:_display_container: 2
+2025-07-14 09:58:53,511:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2025-07-14 09:58:53,511:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:53,723:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:53,723:INFO:Creating metrics dataframe
+2025-07-14 09:58:53,727:INFO:Initializing Quadratic Discriminant Analysis
+2025-07-14 09:58:53,727:INFO:Total runtime is 0.18909193674723307 minutes
+2025-07-14 09:58:53,727:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:53,728:INFO:Initializing create_model()
+2025-07-14 09:58:53,728:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:53,728:INFO:Checking exceptions
+2025-07-14 09:58:53,728:INFO:Importing libraries
+2025-07-14 09:58:53,729:INFO:Copying training dataset
+2025-07-14 09:58:53,733:INFO:Defining folds
+2025-07-14 09:58:53,733:INFO:Declaring metric variables
+2025-07-14 09:58:53,733:INFO:Importing untrained model
+2025-07-14 09:58:53,733:INFO:Quadratic Discriminant Analysis Imported successfully
+2025-07-14 09:58:53,734:INFO:Starting cross validation
+2025-07-14 09:58:53,735:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:53,784:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,784:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,825:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,833:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,865:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,878:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,899:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,918:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,950:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:53,955:INFO:Calculating mean and std
+2025-07-14 09:58:53,956:INFO:Creating metrics dataframe
+2025-07-14 09:58:53,958:INFO:Uploading results into container
+2025-07-14 09:58:53,959:INFO:Uploading model into container now
+2025-07-14 09:58:53,959:INFO:_master_model_container: 8
+2025-07-14 09:58:53,960:INFO:_display_container: 2
+2025-07-14 09:58:53,960:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2025-07-14 09:58:53,960:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:54,168:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:54,169:INFO:Creating metrics dataframe
+2025-07-14 09:58:54,172:INFO:Initializing Ada Boost Classifier
+2025-07-14 09:58:54,172:INFO:Total runtime is 0.19651741981506346 minutes
+2025-07-14 09:58:54,173:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:54,173:INFO:Initializing create_model()
+2025-07-14 09:58:54,173:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:54,174:INFO:Checking exceptions
+2025-07-14 09:58:54,174:INFO:Importing libraries
+2025-07-14 09:58:54,174:INFO:Copying training dataset
+2025-07-14 09:58:54,178:INFO:Defining folds
+2025-07-14 09:58:54,178:INFO:Declaring metric variables
+2025-07-14 09:58:54,178:INFO:Importing untrained model
+2025-07-14 09:58:54,179:INFO:Ada Boost Classifier Imported successfully
+2025-07-14 09:58:54,179:INFO:Starting cross validation
+2025-07-14 09:58:54,180:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:54,213:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,214:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,408:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,411:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,582:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:54,610:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,642:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:54,678:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,839:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:54,868:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:54,922:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:54,945:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:55,063:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:55,140:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-07-14 09:58:55,243:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:55,278:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:55,285:INFO:Calculating mean and std
+2025-07-14 09:58:55,286:INFO:Creating metrics dataframe
+2025-07-14 09:58:55,288:INFO:Uploading results into container
+2025-07-14 09:58:55,288:INFO:Uploading model into container now
+2025-07-14 09:58:55,289:INFO:_master_model_container: 9
+2025-07-14 09:58:55,289:INFO:_display_container: 2
+2025-07-14 09:58:55,290:INFO:AdaBoostClassifier(algorithm='SAMME.R', estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=42)
+2025-07-14 09:58:55,290:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:55,504:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:55,504:INFO:Creating metrics dataframe
+2025-07-14 09:58:55,510:INFO:Initializing Gradient Boosting Classifier
+2025-07-14 09:58:55,511:INFO:Total runtime is 0.2188230792681376 minutes
+2025-07-14 09:58:55,512:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:55,513:INFO:Initializing create_model()
+2025-07-14 09:58:55,513:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:55,513:INFO:Checking exceptions
+2025-07-14 09:58:55,514:INFO:Importing libraries
+2025-07-14 09:58:55,515:INFO:Copying training dataset
+2025-07-14 09:58:55,520:INFO:Defining folds
+2025-07-14 09:58:55,520:INFO:Declaring metric variables
+2025-07-14 09:58:55,521:INFO:Importing untrained model
+2025-07-14 09:58:55,522:INFO:Gradient Boosting Classifier Imported successfully
+2025-07-14 09:58:55,522:INFO:Starting cross validation
+2025-07-14 09:58:55,524:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:55,736:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:55,955:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,120:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,154:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,400:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,627:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,653:INFO:Calculating mean and std
+2025-07-14 09:58:56,654:INFO:Creating metrics dataframe
+2025-07-14 09:58:56,656:INFO:Uploading results into container
+2025-07-14 09:58:56,657:INFO:Uploading model into container now
+2025-07-14 09:58:56,658:INFO:_master_model_container: 10
+2025-07-14 09:58:56,658:INFO:_display_container: 2
+2025-07-14 09:58:56,659:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2025-07-14 09:58:56,659:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:56,891:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:56,891:INFO:Creating metrics dataframe
+2025-07-14 09:58:56,895:INFO:Initializing Linear Discriminant Analysis
+2025-07-14 09:58:56,895:INFO:Total runtime is 0.2418937842051188 minutes
+2025-07-14 09:58:56,895:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:56,896:INFO:Initializing create_model()
+2025-07-14 09:58:56,896:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:56,896:INFO:Checking exceptions
+2025-07-14 09:58:56,897:INFO:Importing libraries
+2025-07-14 09:58:56,897:INFO:Copying training dataset
+2025-07-14 09:58:56,900:INFO:Defining folds
+2025-07-14 09:58:56,900:INFO:Declaring metric variables
+2025-07-14 09:58:56,900:INFO:Importing untrained model
+2025-07-14 09:58:56,901:INFO:Linear Discriminant Analysis Imported successfully
+2025-07-14 09:58:56,901:INFO:Starting cross validation
+2025-07-14 09:58:56,902:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:56,942:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,947:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,985:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:56,988:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,027:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,027:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,062:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,063:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,097:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,098:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,111:INFO:Calculating mean and std
+2025-07-14 09:58:57,112:INFO:Creating metrics dataframe
+2025-07-14 09:58:57,114:INFO:Uploading results into container
+2025-07-14 09:58:57,114:INFO:Uploading model into container now
+2025-07-14 09:58:57,115:INFO:_master_model_container: 11
+2025-07-14 09:58:57,115:INFO:_display_container: 2
+2025-07-14 09:58:57,116:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2025-07-14 09:58:57,116:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:57,331:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:57,332:INFO:Creating metrics dataframe
+2025-07-14 09:58:57,335:INFO:Initializing Extra Trees Classifier
+2025-07-14 09:58:57,335:INFO:Total runtime is 0.24923356771469116 minutes
+2025-07-14 09:58:57,336:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:57,336:INFO:Initializing create_model()
+2025-07-14 09:58:57,336:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:57,337:INFO:Checking exceptions
+2025-07-14 09:58:57,337:INFO:Importing libraries
+2025-07-14 09:58:57,337:INFO:Copying training dataset
+2025-07-14 09:58:57,341:INFO:Defining folds
+2025-07-14 09:58:57,342:INFO:Declaring metric variables
+2025-07-14 09:58:57,342:INFO:Importing untrained model
+2025-07-14 09:58:57,343:INFO:Extra Trees Classifier Imported successfully
+2025-07-14 09:58:57,343:INFO:Starting cross validation
+2025-07-14 09:58:57,344:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:57,596:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,626:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,874:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:57,885:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,133:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,188:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,377:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,474:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,648:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,730:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:58,741:INFO:Calculating mean and std
+2025-07-14 09:58:58,742:INFO:Creating metrics dataframe
+2025-07-14 09:58:58,744:INFO:Uploading results into container
+2025-07-14 09:58:58,745:INFO:Uploading model into container now
+2025-07-14 09:58:58,745:INFO:_master_model_container: 12
+2025-07-14 09:58:58,746:INFO:_display_container: 2
+2025-07-14 09:58:58,746:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False)
+2025-07-14 09:58:58,747:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:58,969:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:58,969:INFO:Creating metrics dataframe
+2025-07-14 09:58:58,972:INFO:Initializing Extreme Gradient Boosting
+2025-07-14 09:58:58,973:INFO:Total runtime is 0.2765197197596232 minutes
+2025-07-14 09:58:58,973:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:58,973:INFO:Initializing create_model()
+2025-07-14 09:58:58,974:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=xgboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:58,974:INFO:Checking exceptions
+2025-07-14 09:58:58,974:INFO:Importing libraries
+2025-07-14 09:58:58,975:INFO:Copying training dataset
+2025-07-14 09:58:58,978:INFO:Defining folds
+2025-07-14 09:58:58,979:INFO:Declaring metric variables
+2025-07-14 09:58:58,979:INFO:Importing untrained model
+2025-07-14 09:58:58,980:INFO:Extreme Gradient Boosting Imported successfully
+2025-07-14 09:58:58,980:INFO:Starting cross validation
+2025-07-14 09:58:58,981:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:59,102:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,239:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,260:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,303:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,330:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,368:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,389:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:58:59,396:INFO:Calculating mean and std
+2025-07-14 09:58:59,397:INFO:Creating metrics dataframe
+2025-07-14 09:58:59,399:INFO:Uploading results into container
+2025-07-14 09:58:59,400:INFO:Uploading model into container now
+2025-07-14 09:58:59,400:INFO:_master_model_container: 13
+2025-07-14 09:58:59,400:INFO:_display_container: 2
+2025-07-14 09:58:59,401:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              feature_weights=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=None, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=-1, num_parallel_tree=None, ...)
+2025-07-14 09:58:59,402:INFO:create_model() successfully completed......................................
+2025-07-14 09:58:59,624:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:58:59,624:INFO:Creating metrics dataframe
+2025-07-14 09:58:59,628:INFO:Initializing Light Gradient Boosting Machine
+2025-07-14 09:58:59,628:INFO:Total runtime is 0.2874418536822001 minutes
+2025-07-14 09:58:59,628:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:58:59,629:INFO:Initializing create_model()
+2025-07-14 09:58:59,629:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:58:59,629:INFO:Checking exceptions
+2025-07-14 09:58:59,629:INFO:Importing libraries
+2025-07-14 09:58:59,630:INFO:Copying training dataset
+2025-07-14 09:58:59,633:INFO:Defining folds
+2025-07-14 09:58:59,634:INFO:Declaring metric variables
+2025-07-14 09:58:59,634:INFO:Importing untrained model
+2025-07-14 09:58:59,635:INFO:Light Gradient Boosting Machine Imported successfully
+2025-07-14 09:58:59,635:INFO:Starting cross validation
+2025-07-14 09:58:59,636:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:58:59,757:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,029:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,712:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,777:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,898:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,918:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,964:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:00,971:INFO:Calculating mean and std
+2025-07-14 09:59:00,972:INFO:Creating metrics dataframe
+2025-07-14 09:59:00,974:INFO:Uploading results into container
+2025-07-14 09:59:00,974:INFO:Uploading model into container now
+2025-07-14 09:59:00,975:INFO:_master_model_container: 14
+2025-07-14 09:59:00,975:INFO:_display_container: 2
+2025-07-14 09:59:00,976:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-07-14 09:59:00,976:INFO:create_model() successfully completed......................................
+2025-07-14 09:59:01,194:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:59:01,194:INFO:Creating metrics dataframe
+2025-07-14 09:59:01,197:INFO:Initializing CatBoost Classifier
+2025-07-14 09:59:01,197:INFO:Total runtime is 0.3136009136835734 minutes
+2025-07-14 09:59:01,198:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:59:01,198:INFO:Initializing create_model()
+2025-07-14 09:59:01,199:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:59:01,199:INFO:Checking exceptions
+2025-07-14 09:59:01,199:INFO:Importing libraries
+2025-07-14 09:59:01,199:INFO:Copying training dataset
+2025-07-14 09:59:01,203:INFO:Defining folds
+2025-07-14 09:59:01,203:INFO:Declaring metric variables
+2025-07-14 09:59:01,204:INFO:Importing untrained model
+2025-07-14 09:59:01,204:INFO:CatBoost Classifier Imported successfully
+2025-07-14 09:59:01,204:INFO:Starting cross validation
+2025-07-14 09:59:01,205:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:59:04,995:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:05,327:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:08,133:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:08,323:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:11,012:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:11,496:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:14,200:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:14,307:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,312:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,387:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,401:INFO:Calculating mean and std
+2025-07-14 09:59:17,402:INFO:Creating metrics dataframe
+2025-07-14 09:59:17,404:INFO:Uploading results into container
+2025-07-14 09:59:17,405:INFO:Uploading model into container now
+2025-07-14 09:59:17,405:INFO:_master_model_container: 15
+2025-07-14 09:59:17,405:INFO:_display_container: 2
+2025-07-14 09:59:17,405:INFO:<catboost.core.CatBoostClassifier object at 0x746fccd5ec90>
+2025-07-14 09:59:17,406:INFO:create_model() successfully completed......................................
+2025-07-14 09:59:17,616:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:59:17,616:INFO:Creating metrics dataframe
+2025-07-14 09:59:17,620:INFO:Initializing Dummy Classifier
+2025-07-14 09:59:17,620:INFO:Total runtime is 0.5873065869013468 minutes
+2025-07-14 09:59:17,620:INFO:SubProcess create_model() called ==================================
+2025-07-14 09:59:17,620:INFO:Initializing create_model()
+2025-07-14 09:59:17,621:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x746fcd676a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:59:17,621:INFO:Checking exceptions
+2025-07-14 09:59:17,621:INFO:Importing libraries
+2025-07-14 09:59:17,621:INFO:Copying training dataset
+2025-07-14 09:59:17,625:INFO:Defining folds
+2025-07-14 09:59:17,625:INFO:Declaring metric variables
+2025-07-14 09:59:17,625:INFO:Importing untrained model
+2025-07-14 09:59:17,626:INFO:Dummy Classifier Imported successfully
+2025-07-14 09:59:17,626:INFO:Starting cross validation
+2025-07-14 09:59:17,627:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-07-14 09:59:17,674:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,676:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,720:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,726:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,752:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,766:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,783:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,797:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,827:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,838:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-07-14 09:59:17,846:INFO:Calculating mean and std
+2025-07-14 09:59:17,847:INFO:Creating metrics dataframe
+2025-07-14 09:59:17,850:INFO:Uploading results into container
+2025-07-14 09:59:17,850:INFO:Uploading model into container now
+2025-07-14 09:59:17,851:INFO:_master_model_container: 16
+2025-07-14 09:59:17,851:INFO:_display_container: 2
+2025-07-14 09:59:17,852:INFO:DummyClassifier(constant=None, random_state=42, strategy='prior')
+2025-07-14 09:59:17,853:INFO:create_model() successfully completed......................................
+2025-07-14 09:59:18,072:INFO:SubProcess create_model() end ==================================
+2025-07-14 09:59:18,072:INFO:Creating metrics dataframe
+2025-07-14 09:59:18,076:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+
+2025-07-14 09:59:18,078:INFO:Initializing create_model()
+2025-07-14 09:59:18,078:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-07-14 09:59:18,078:INFO:Checking exceptions
+2025-07-14 09:59:18,079:INFO:Importing libraries
+2025-07-14 09:59:18,079:INFO:Copying training dataset
+2025-07-14 09:59:18,083:INFO:Defining folds
+2025-07-14 09:59:18,083:INFO:Declaring metric variables
+2025-07-14 09:59:18,083:INFO:Importing untrained model
+2025-07-14 09:59:18,083:INFO:Declaring custom model
+2025-07-14 09:59:18,084:INFO:Logistic Regression Imported successfully
+2025-07-14 09:59:18,085:INFO:Cross validation set to False
+2025-07-14 09:59:18,085:INFO:Fitting Model
+2025-07-14 09:59:18,104:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-07-14 09:59:18,104:INFO:create_model() successfully completed......................................
+2025-07-14 09:59:18,347:INFO:_master_model_container: 16
+2025-07-14 09:59:18,348:INFO:_display_container: 2
+2025-07-14 09:59:18,348:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-07-14 09:59:18,348:INFO:compare_models() successfully completed......................................
+2025-07-14 09:59:18,353:INFO:Initializing predict_model()
+2025-07-14 09:59:18,353:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x746fe6a31ed0>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x747001660e00>)
+2025-07-14 09:59:18,354:INFO:Checking exceptions
+2025-07-14 09:59:18,354:INFO:Preloading libraries
+2025-07-14 09:59:18,354:INFO:Set up data.
+2025-07-14 09:59:18,359:INFO:Set up index.
+2025-07-14 09:59:18,383:WARNING:/workspaces/financial-fraud-detection-dashboard/fraud-env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+2025-07-14 09:59:18,619:INFO:Initializing save_model()
+2025-07-14 09:59:18,620:INFO:save_model(model=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), model_name=best_automl_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['amount', 'feature1', 'feature2',
+                                             'hour'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2025-07-14 09:59:18,620:INFO:Adding model into prep_pipe
+2025-07-14 09:59:18,623:INFO:best_automl_model.pkl saved in current working directory
+2025-07-14 09:59:18,633:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['amount', 'feature1', 'feature2',
+                                             'hour'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    tr...
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=42,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False)
+2025-07-14 09:59:18,634:INFO:save_model() successfully completed......................................
