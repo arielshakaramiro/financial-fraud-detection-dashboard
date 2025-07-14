@@ -1,4 +1,4 @@
-# app.py (FINAL with PyCaret AutoML)
+# app.py
 
 import streamlit as st
 import pandas as pd
@@ -119,6 +119,7 @@ if 'is_fraud' in df.columns:
             best_params = study.best_params
             st.write("🔧 Hyperparameter terbaik:", best_params)
             model = RandomForestClassifier(**best_params, random_state=42)
+
         elif model_type == "XGBoost":
             model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
         elif model_type == "LightGBM":
