@@ -1,3 +1,6 @@
+# © 2025 Ariel Shakaramiro - All rights reserved.
+# Unauthorized copying or commercial use of this file is strictly prohibited.
+
 # app.py (FINAL with PyCaret AutoML + Quick Prediction Mode)
 
 import streamlit as st
