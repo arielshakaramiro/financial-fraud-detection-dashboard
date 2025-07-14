@@ -1,4 +1,4 @@
-# app.py
+# app.py (FINAL with PyCaret AutoML + Quick Prediction Mode)
 
 import streamlit as st
 import pandas as pd
@@ -9,9 +9,8 @@ import time
 import plotly.express as px
 import plotly.graph_objects as go
 import joblib
-from sklearn.ensemble import RandomForestClassifier, IsolationForest, StackingClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier, IsolationForest
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_curve, auc
 from sklearn.svm import OneClassSVM
 from xgboost import XGBClassifier
@@ -19,6 +18,7 @@ from lightgbm import LGBMClassifier
 from catboost import CatBoostClassifier
 from imblearn.over_sampling import SMOTE
 import optuna
+from pycaret.classification import setup, compare_models, predict_model, pull, save_model
 
 # === UI Styling ===
 def set_bg_hack(png_file):
@@ -88,15 +88,62 @@ if 'is_fraud' in df.columns:
 
 st.sidebar.subheader("⚙️ Pengaturan Model")
 model_type = st.sidebar.selectbox("Pilih Algoritma Deteksi:", [
-    "Random Forest", "XGBoost", "LightGBM", "CatBoost", "Stacking Ensemble", "Isolation Forest (Anomali)", "One-Class SVM (Anomali)"])
+    "Random Forest", "XGBoost", "LightGBM", "CatBoost", "Isolation Forest (Anomali)", "One-Class SVM (Anomali)", "AutoML (PyCaret)"])
 threshold = st.sidebar.slider("Threshold Deteksi Penipuan", 0.0, 1.0, 0.5, 0.01)
+quick_mode = st.sidebar.checkbox("🚀 Aktifkan Mode Prediksi Cepat (tanpa pelatihan ulang)")
 
 if 'is_fraud' in df.columns:
     st.subheader("🔍 Hasil Prediksi Penipuan")
     X = df.drop(columns=['is_fraud', 'transaction_time']) if 'transaction_time' in df.columns else df.drop(columns=['is_fraud'])
     y = df['is_fraud']
 
-    if model_type not in ["Isolation Forest (Anomali)", "One-Class SVM (Anomali)"]:
+    if model_type == "AutoML (PyCaret)":
+        data = df.copy()
+        if 'transaction_time' in data.columns:
+            data = data.drop(columns=['transaction_time'])
+
+        data = data.dropna(subset=['is_fraud'])
+        df = df.loc[data.index]
+
+        if quick_mode:
+            st.info("🔄 Mode Prediksi Cepat diaktifkan: memuat model dari file")
+            try:
+                best_model = joblib.load("best_automl_model.pkl")
+                predictions = predict_model(best_model, data=data)
+                df['fraud_prediction'] = (predictions['prediction_score'] >= threshold).astype(int)
+
+                y_true = df['is_fraud']
+                y_pred = df['fraud_prediction']
+
+                st.metric("Accuracy", f"{accuracy_score(y_true, y_pred):.2f}")
+                st.metric("Precision", f"{precision_score(y_true, y_pred, zero_division=0):.2f}")
+                st.metric("Recall", f"{recall_score(y_true, y_pred, zero_division=0):.2f}")
+                st.metric("F1 Score", f"{f1_score(y_true, y_pred, zero_division=0):.2f}")
+                st.subheader("🕵️ Contoh Transaksi Terdeteksi Penipuan")
+                st.dataframe(df[df['fraud_prediction'] == 1].head(10), use_container_width=True)
+            except FileNotFoundError:
+                st.error("❌ Model belum tersedia. Jalankan pelatihan model terlebih dahulu.")
+        else:
+            with st.spinner("🔍 Mencari model terbaik dengan PyCaret..."):
+                s = setup(data, target='is_fraud', session_id=42, verbose=False)
+                best_model = compare_models()
+                model_result = pull()
+                st.write("📈 Hasil AutoML PyCaret:", model_result)
+                predictions = predict_model(best_model, data=data)
+                df['fraud_prediction'] = (predictions['prediction_score'] >= threshold).astype(int)
+                save_model(best_model, 'best_automl_model')
+
+                y_true = df['is_fraud']
+                y_pred = df['fraud_prediction']
+
+                st.metric("Accuracy", f"{accuracy_score(y_true, y_pred):.2f}")
+                st.metric("Precision", f"{precision_score(y_true, y_pred, zero_division=0):.2f}")
+                st.metric("Recall", f"{recall_score(y_true, y_pred, zero_division=0):.2f}")
+                st.metric("F1 Score", f"{f1_score(y_true, y_pred, zero_division=0):.2f}")
+                st.subheader("🕵️ Contoh Transaksi Terdeteksi Penipuan")
+                st.dataframe(df[df['fraud_prediction'] == 1].head(10), use_container_width=True)
+
+    elif model_type not in ["Isolation Forest (Anomali)", "One-Class SVM (Anomali)"]:
         smote = SMOTE(random_state=42)
         X_resampled, y_resampled = smote.fit_resample(X, y)
         X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42)
@@ -119,20 +166,12 @@ if 'is_fraud' in df.columns:
             best_params = study.best_params
             st.write("🔧 Hyperparameter terbaik:", best_params)
             model = RandomForestClassifier(**best_params, random_state=42)
-
         elif model_type == "XGBoost":
             model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
         elif model_type == "LightGBM":
             model = LGBMClassifier()
         elif model_type == "CatBoost":
             model = CatBoostClassifier(verbose=0)
-        elif model_type == "Stacking Ensemble":
-            estimators = [
-                ('rf', RandomForestClassifier(n_estimators=100, random_state=42, class_weight='balanced')),
-                ('xgb', XGBClassifier(use_label_encoder=False, eval_metric='logloss')),
-                ('lgb', LGBMClassifier())
-            ]
-            model = StackingClassifier(estimators=estimators, final_estimator=LogisticRegression(), n_jobs=-1)
 
         model.fit(X_train, y_train)
         proba = model.predict_proba(X_test)[:, 1]
@@ -198,10 +237,18 @@ if num_cols:
         st.plotly_chart(box, use_container_width=True)
 
 if 'transaction_time' in df.columns and 'amount' in df.columns:
+    df['amount'] = pd.to_numeric(df['amount'], errors='coerce')
+    df = df.dropna(subset=['amount'])
+
     with st.expander("🎥 Grafik Jumlah Transaksi per Jam"):
         hourly_df = df.groupby('hour')['amount'].sum().reset_index()
-        anim_bar = px.bar(hourly_df, x='amount', y='hour', orientation='h',
-                          animation_frame='hour', range_x=[0, hourly_df['amount'].max()*1.2],
-                          color='hour', color_continuous_scale='Plasma',
+        anim_bar = px.bar(hourly_df,
+                          x='amount',
+                          y='hour',
+                          orientation='h',
+                          animation_frame='hour',
+                          range_x=[0, hourly_df['amount'].max() * 1.2],
+                          color='hour',
+                          color_continuous_scale='Plasma',
                           title="Total Transaksi per Jam")
         st.plotly_chart(anim_bar, use_container_width=True)
