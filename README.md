@@ -49,7 +49,7 @@ financial-fraud-preprocessing/
 ## 🏁 Cara Menjalankan
 
 ```bash
-git clone https://github.com/namakamu/financial-fraud-detection-dashboard
+git clone https://github.com/arielshakaramiro/financial-fraud-detection-dashboard
 cd financial-fraud-detection-dashboard
 pip install -r requirements.txt
 streamlit run app.py
