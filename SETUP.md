@@ -34,6 +34,24 @@
    dicoba dengan data yang bermakna. Untuk pakai data sendiri, upload CSV lewat
    panel di sidebar kiri.
 
+## Deploy ke Streamlit Community Cloud
+
+App ini siap di-deploy gratis ke [share.streamlit.io](https://share.streamlit.io):
+
+1. Login dengan akun GitHub, klik **New app**.
+2. Pilih repository `arielshakaramiro/financial-fraud-detection-dashboard`,
+   branch `main`, dan main file `app.py`.
+3. (Opsional) di **Advanced settings**, set **Python version** ke `3.11`.
+4. Klik **Deploy**. Build pertama butuh beberapa menit (meng-install dependency).
+
+File pendukung deploy yang sudah ada di repo:
+- `requirements.txt` — dependency Python (versi sudah dikunci).
+- `packages.txt` — system package `libgomp1` (dibutuhkan LightGBM di Linux).
+- `runtime.txt` — menandai Python 3.11.
+
+Catatan: dataset bawaan (`data/creditcard_fraud_real_sample.csv`) sudah ikut di repo,
+jadi app langsung jalan setelah deploy tanpa setup data tambahan.
+
 ## Kalau ada error
 
 - `ModuleNotFoundError: No module named 'xxx'` → dependency belum ke-install, ulangi
