@@ -2,3 +2,21 @@ catboost_info/
 data/processed/
 fraud-env/
 
+# Model & log artifacts -- ini file hasil training/run lokal, bukan source code.
+# Sebelumnya ke-commit ke repo (best_automl_model.pkl, model/*.pkl, logs.log),
+# bikin repo bengkak dan gampang basi (model lama tersimpan permanen di histori git).
+# Kalau butuh menyimpan model terlatih untuk demo, pertimbangkan Git LFS atau
+# hosting terpisah (misal Hugging Face Hub / cloud storage), bukan commit langsung.
+*.pkl
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dataset lengkap (~107 MB) -- terlalu besar untuk di-commit ke GitHub
+# (limit file GitHub 100 MB). Versi sample yang ringan
+# (data/creditcard_fraud_real_sample.csv, ~4.7 MB) tetap di-track supaya app
+# bisa langsung jalan setelah clone. Untuk dataset lengkap, unduh terpisah atau
+# pakai Git LFS. Lihat README bagian "Dataset".
+data/creditcard_fraud_real_full.csv

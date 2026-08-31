@@ -1,0 +1,9 @@
+# Dependency opsional untuk mode "AutoML (PyCaret)" di sidebar.
+# Dipisah dari requirements.txt karena pycaret[full] sangat berat (banyak
+# library turunan) dan bisa bikin gagal deploy di platform gratis seperti
+# Streamlit Community Cloud kalau selalu ikut ter-install.
+#
+# Install hanya kalau mau pakai mode AutoML:
+#   pip install -r requirements.txt -r requirements-automl.txt
+
+pycaret[full]==3.3.2
