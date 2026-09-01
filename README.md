@@ -11,7 +11,7 @@
 - 🧠 Prediksi ML: pilihan model Random Forest, XGBoost, LightGBM, CatBoost, deteksi anomali (Isolation Forest / One-Class SVM), serta AutoML (PyCaret, opsional)  
 - ⚖️ Penanganan data tidak seimbang: SMOTE hanya pada data train (bebas kebocoran/leakage)  
 - 📊 Visualisasi: histogram, heatmap, boxplot, animasi volume transaksi  
-- 🌌 Tampilan UI futuristik: tema warna `#0C3B5D` dan latar kustom  
+- 🌌 Tampilan UI modern futuristik: tema warna `#0C3B5D` dan latar kustom  
 - 🧪 Evaluasi model: akurasi, presisi, recall, F1 score, ROC curve
 
 ---
